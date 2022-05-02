@@ -9,6 +9,7 @@ tag(): user.splits
 tag(): user.tabs
 window reload: user.vscode("workbench.action.reloadWindow")
 window close: user.vscode("workbench.action.closeWindow")
+window other: user.vscode("workbench.action.closeOtherEditors")
 #multiple_cursor.py support end
 
 please [<user.text>]:
@@ -209,3 +210,18 @@ cell run above: user.vscode("jupyter.runallcellsabove.palette")
 cell run: user.vscode("jupyter.runcurrentcell")
 
 install local: user.vscode("workbench.extensions.action.installVSIX")
+
+# MetaJump
+skip:
+    key(alt-/)
+
+skip <user.key>:
+    key(alt-/)
+    key(key)
+
+select:
+    key(alt-shift-/)
+
+select <user.key>:
+    key(alt-shift-/)
+    key(key)
