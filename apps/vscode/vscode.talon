@@ -67,6 +67,7 @@ file move:
 file open folder: user.vscode("revealFileInOS")
 file reveal: user.vscode("workbench.files.action.showActiveFileInExplorer")
 save ugly: user.vscode("workbench.action.files.saveWithoutFormatting")
+save: user.vscode("workbench.action.files.save")
 
 # Language Features
 suggest show: user.vscode("editor.action.triggerSuggest")
@@ -215,9 +216,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
 skip:
     key(alt-/)
 
-skip <user.key>:
-    key(alt-/)
-    key(key)
+.
 
 select:
     key(alt-shift-/)

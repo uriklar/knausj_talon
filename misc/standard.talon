@@ -19,12 +19,16 @@ copy that: edit.copy()
 cut that: edit.cut()
 paste that: edit.paste()
 nope: edit.undo()
-redo that: edit.redo()
+yup: edit.redo()
 paste match: edit.paste_match_style()
 file save: edit.save()
 wipe: key(backspace)    
-(pad | padding): 
+pad: 
 	insert("  ") 
 	key(left)
+spacer <user.key>:
+    insert(" ") 
+    key(key)
+	insert(" ") 
 slap: edit.line_insert_down()
 
