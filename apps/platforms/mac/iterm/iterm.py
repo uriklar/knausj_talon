@@ -8,6 +8,7 @@ app: iterm2
 directories_to_remap = {}
 directories_to_exclude = {}
 
+mod = Module()
 
 @ctx.action_class("user")
 class user_actions:
@@ -84,3 +85,9 @@ class user_actions:
         actions.key("ctrl-c")
         actions.insert("y")
         actions.key("enter")
+
+
+@mod.capture(rule='runner <word>')
+def npm_script(m) -> str:
+    """Runs an npm script"""
+    return 'npm run ' + m.word.lower()

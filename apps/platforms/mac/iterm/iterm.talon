@@ -9,6 +9,10 @@ tag(): user.git
 tag(): user.kubectl
 tag(): user.tabs
 
+<user.npm_script>: 
+    insert(npm_script)
+    key(enter)  
+
 install:
     insert('npm i')
     key(enter) 
