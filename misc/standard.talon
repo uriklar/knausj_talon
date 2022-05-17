@@ -31,4 +31,3 @@ spacer <user.key>:
     key(key)
 	insert(" ") 
 slap: edit.line_insert_down()
-
