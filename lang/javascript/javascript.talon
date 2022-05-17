@@ -52,3 +52,6 @@ state spread: "..."
 
 from import:
     user.insert_between(' from  "', '"')
+
+arrow funk: 
+    user.insert_between("() => {", "}")
