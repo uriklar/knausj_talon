@@ -22,7 +22,7 @@ language_extensions = {
     # 'html': 'html',
     'java': 'java',
     'javascript': 'js',
-    'javascriptreact': 'jsx',
+    'javascriptreact': 'js',
     # 'json': 'json',
     # 'lua': 'lua',
     'markdown': 'md',
