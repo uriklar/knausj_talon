@@ -1,12 +1,21 @@
-# from talon import  Module, Context, actions 
-# import subprocess
-# import os
-# import pathlib
+from talon import Module, Context
 
-# mod = Module()
-# ctx = Context()
+mod = Module()
+ctx = Context()
 
-# @ctx.capture(rule='<user.text>')
-# def create_element(m):
-#     return '<' + actions.user.formatted_text(m.text, 'PUBLIC_CAMEL_CASE') + '>'
-    
+mod.list('react_hooks', desc='list of all react hooks')
+
+
+ctx.lists['user.react_hooks'] = {
+    'state': 'State',
+    'effect': 'Effect',
+    'reducer': 'Reducer',
+    'context': 'Context',
+    'memo': 'Memo',
+    'callback': 'Callback'
+}
+
+@mod.capture(rule='{user.react_hooks}')
+def react_hooks(m) -> str:
+    """returns or react snipped name"""
+    return m.react_hooks

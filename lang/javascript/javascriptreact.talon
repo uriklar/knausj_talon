@@ -7,3 +7,9 @@ prop string:
 
 prop var: 
     user.insert_between('={', '}')
+
+react {user.react_hooks}:
+    insert("use{user.react_hooks}Snippet")
+    key('ctrl-space')
+    sleep(300ms)
+    key('tab')
